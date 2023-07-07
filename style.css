@@ -13,7 +13,7 @@ html{
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: rgba(0, 0, 0, 0.5);
+    background-color: rgba(0, 0, 0, 0.7);
     position: sticky;
     top: 0;
 }
@@ -44,7 +44,7 @@ html{
 #home{
     display: flex;
     flex-direction: column;
-    background-color: rgba(0, 0, 0, 0.8);
+    background-color: rgba(0, 0, 0, 0.5);
     height: 840px;
     justify-content: center;
     align-items: center;
@@ -55,7 +55,7 @@ html{
     position: absolute;
     top: 0;
     right: 0;
-    background: url(/Portfolio/img/black\ backgorun.jpg) no-repeat center center/cover;
+    background: url(img/black\ backgorun.jpg) no-repeat center center/cover;
     height: 900px;
     width: 100%;
     z-index: -1;
@@ -75,8 +75,9 @@ html{
     font-size: 3rem;
     text-align: center;
     margin: 40px 0px;
+    text-decoration: none;
 }
-.btn{
+.btn {
     padding: 10px 35px;
     background-color: transparent;
     border: 1px solid white;
@@ -84,14 +85,28 @@ html{
     outline: none;
     transition: .6s ease;
 }
-.btn:hover{
+.btn:hover {
     cursor: pointer;
     background-color: white;
     color: black;
     box-shadow: 0 0 5px white, 0 0 10px white 0 0 15px white;
     font-weight: bold;
 }
+.btn a{
+    text-decoration: none;
+    color: white;
+    background-color: transparent;
+    outline: none;
+    transition: .6s ease;
+}
+.btn:hover a{
+    cursor: pointer;
+    background-color: white;
+    color: black;
+    box-shadow: 0 0 5px white, 0 0 10px white 0 0 15px white;
+    font-weight: bold;
 
+}
 /* About Section */
 #about{
     font-display: flex;
@@ -138,6 +153,21 @@ html{
     height: 420px;
     margin: 10px;
 }
+.container{
+    display: flex;
+    flex-direction: column;
+    border: 1px solid white;
+    margin: 10px;
+    padding: 10px;
+    text-align: center;
+    /* text-align untuk tulisan di tengah tidak dengan posisi di dalam box */
+    align-items: center;
+    /* ketika dua ada dua colom maka akan ditengah sesuai colom */
+    justify-content: center;
+    border-radius: 6px;
+    width: 250px;
+    height: 140px;
+}
 
 /* Services Section */
 #services{
@@ -162,6 +192,7 @@ html{
     text-align: center;
     padding: 10px;
     border-radius: 15px;
+    /* border-radius buat lengkungan kotak */
     background: linear-gradient(to top, rgb(255,45,45) 50%, white 50%);
     background-size: 100% 200%;
     transition: all .8s;
