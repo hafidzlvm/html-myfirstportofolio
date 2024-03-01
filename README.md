@@ -1,0 +1,3 @@
+## First Portofolio
+
+Hello everyone, to access this repo on your laptop you must have apache server on ubuntu or if you use windows, you can use xampp. soo, put this folder on var/www/html (ubuntu_system). actually, this is was my first portofolio i've make, but nowdays i have so much better skill in coding. Thank you...
